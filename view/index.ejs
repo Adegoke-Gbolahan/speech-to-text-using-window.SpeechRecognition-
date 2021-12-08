@@ -13,17 +13,29 @@
 
             <h1 style="margin-top: 50px;" class="text text-center">Speech to Text App</h1>
             <br>
+            <div class="mt-4" id="div_language">
+                <h3 class="mb-3 text-light">Select Language</h2>
+                <select class="form-control bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
+                <br>
+                <select class="form-control bg-secondary text-light mt-2" id="select_dialect"></select>
+              </div>
+              <br>
             <div class="app"> 
-                <div class="input-single">
+                <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
+                    <span id="final" class="text-light"></span>
+                    <span id="interim" class="text-secondary"></span>
+                  </div>
+                <!-- <div class="input-single">
                     <textarea id="note-textarea" class="form-control" placeholder="Text shows her" readonly rows="6"></textarea>
-                </div>  
+                </div>   -->
                 <br>           
                 <div class="text-center">
-                    <button id="start-record-btn" class="btn btn-success"  title="Start Recording">Start Recognition</button>
-                <button id="pause-record-btn" title="Pause Recording" class="btn btn-warning">Pause Recognition</button> 
+                    <button id="start" class="btn btn-success"  title="Start Recording">Start Conversion</button>
+                <button id="stop" title="Pause Recording" class="btn btn-warning">Pause Conversion</button> 
                 <br><br>
                 </div>
-                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
+                <!-- <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p> -->
                 
                 <!-- <h3>My Notes</h3>
                 <ul id="notes">
@@ -38,6 +50,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <script src="language.js"></script>
 
         
 
