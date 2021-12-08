@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Speech to text web app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 style="margin-top: 50px;" class="text text-center">Speech to Text App</h1>
+            <br>
+            <div class="app"> 
+                <div class="input-single">
+                    <textarea id="note-textarea" class="form-control" placeholder="Text shows her" readonly rows="6"></textarea>
+                </div>  
+                <br>           
+                <div class="text-center">
+                    <button id="start-record-btn" class="btn btn-success"  title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording" class="btn btn-warning">Pause Recognition</button> 
+                <br><br>
+                </div>
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                
+                <!-- <h3>My Notes</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul> -->
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        
+
+    </body>
+</html>
